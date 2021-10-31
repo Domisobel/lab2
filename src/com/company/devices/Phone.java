@@ -22,11 +22,13 @@ public class Phone extends Device implements Saleable  {
 
 
     @Override
-    public void sale(Human seller, Human buyer, Double price) {
+    public void sale(Human seller, Human buyer, Double price) throws Exception{
         if(seller.telefon != this) {
-            System.out.println("Soprzedawca nie ma telefonu");
+            throw new Exception("oprzedawca nie ma telefonu");
+           // System.out.println("Soprzedawca nie ma telefonu");
         } else if (buyer.cash < price) {
-            System.out.println("Za mało kasy");
+            throw new Exception("Za mało kasy");
+          //  System.out.println("Za mało kasy");
         } else {
             seller.cash += price;
             buyer.cash -= price;

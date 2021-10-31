@@ -40,10 +40,22 @@ public class Main {
 
         sister.car.sale(sister, dominika, 1500.0);
 
+
+
       //  System.out.println("dominika.telefon "+ dominika.telefon);
       //  System.out.println("sister.telefon " + sister.telefon);
+        try {
+            dominika.telefon.sale(dominika, sister, 500.0);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
 
-        dominika.telefon.sale(dominika, sister, 500.0);
+        }
+        try {
+            dominika.pet.sale(dominika, sister, 500.0);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+
+        }
         //dodac sprzedaz zwierzat
 
       //  System.out.println("me.telefon " + sister.telefon);

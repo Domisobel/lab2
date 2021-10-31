@@ -22,7 +22,7 @@ public class Car extends Device implements Saleable {
         if(seller.car != this) {
             System.out.println("Soprzedawca nie ma samochodu");
         } else if (buyer.cash < price) {
-            System.out.println("Za mało kasy");
+            System.out.println("Za mało kasy na samochod");
         } else {
             seller.cash += price;
             buyer.cash -= price;
