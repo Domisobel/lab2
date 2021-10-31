@@ -1,10 +1,10 @@
-package com.company;
+package com.company.creatures;
 
 
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
-public class Human extends Animal{
+public class Human extends Animal {
 
     private static final Double DEFAULT_SALARY = 1600.0;
     public Car car;
@@ -12,13 +12,13 @@ public class Human extends Animal{
 
     String firstName;
     String lastName;
-    Animal pet;
+    public Animal pet;
     public Phone telefon;
     private String device;
     private Double salary;
     public double cash;
 
-    Human(String firstName, String lastName) {
+    public Human(String firstName, String lastName) {
         super("homo sapiens");
 
         this.firstName = firstName;
@@ -77,4 +77,8 @@ public class Human extends Animal{
     }
 
 
+    @Override
+    public void feed(double foodWeight) {///wpisac ciało metody, logiczne zagadnienie rozbudowujące -potem
+
+    }
 }

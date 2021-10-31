@@ -1,6 +1,9 @@
 package com.company;
 
 
+import com.company.creatures.Animal;
+import com.company.creatures.Human;
+import com.company.creatures.Pet;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
@@ -9,8 +12,8 @@ public class Main {
     public static void main(String[] args) {
         Phone motorola=new Phone("Motorola");
         motorola.os="Motorola";
-        Animal dog = new Animal("canis");
-        Animal cat = new Animal("felis");
+        Pet dog = new Pet("canis");
+        Pet cat = new Pet("felis");
         dog.name = "Szarik";
         dog.weight = 3.5;
         dog.age = 2;

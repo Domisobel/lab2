@@ -1,16 +1,19 @@
-package com.company;
+package com.company.creatures;
 
-public class Animal implements Saleable {
+import com.company.Feedable;
+import com.company.Saleable;
+
+public abstract class Animal implements Saleable, Feedable {
     private static final Double DEFAULT_ANIMAL_WEIGHT = 1.0;
     private static final Double DEFAULT_DOG_WEIGHT = 12.0;
     private static final Double DEFAULT_CAT_WEIGHT = 2.3;
     final String species;
-    String name;
-    Double weight;
-    Integer age;
-    Boolean alive;
+    public String name;
+    public Double weight;
+    public Integer age;
+    public Boolean alive;
 
-    Animal(String species) {
+    public Animal(String species) {
         this.species = species; //wartosc z parametru
         this.alive = true; //wartosc domyslna
         if (this.species == "canis") {
@@ -22,7 +25,9 @@ public class Animal implements Saleable {
         }
     }
 
-    void feed() {
+
+
+    public void feed() {
         if(weight>0) {
             weight++;
             System.out.println("Moja waga to: " + weight);
@@ -30,7 +35,7 @@ public class Animal implements Saleable {
             System.out.println("Zwierze nie żyje");
         }
     }
-    void takeForAWalk() {
+    public void takeForAWalk() {
         weight--;
         if(weight==0){
             System.out.println("Już za późno ");
@@ -42,11 +47,11 @@ public class Animal implements Saleable {
             System.out.println("Moja waga to: " + weight);
         }
     }
-    void feed(Double foodWeight) {
+    public void feed(Double foodWeight) {
         weight += foodWeight;
         System.out.println("Ilosc jedzenia: " + weight);
     }
-    Double getWeight() {
+    public Double getWeight() {
         return weight;
     }
 

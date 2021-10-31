@@ -1,10 +1,8 @@
 package com.company.devices;
 
 import com.company.Device;
-import com.company.Human;
+import com.company.creatures.Human;
 import com.company.Saleable;
-
-import java.awt.*;
 
 public class Car extends Device implements Saleable {
 
