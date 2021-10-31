@@ -7,13 +7,16 @@ import com.company.devices.Phone;
 public class Human extends Animal{
 
     private static final Double DEFAULT_SALARY = 1600.0;
+    public Car car;
+
 
     String firstName;
     String lastName;
     Animal pet;
-    Phone telefon;
+    public Phone telefon;
     private String device;
     private Double salary;
+    public double cash;
 
     Human(String firstName, String lastName) {
         super("homo sapiens");
@@ -21,7 +24,10 @@ public class Human extends Animal{
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = DEFAULT_SALARY;
+        this.cash = 0.0;
     }
+
+
 
     public void setSalary(Double newSalary) {
         if (newSalary >= 0) {

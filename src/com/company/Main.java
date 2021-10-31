@@ -29,9 +29,24 @@ public class Main {
 
 
         Human dominika =new Human("Dominika","Migus");
+        Human sister = new Human("Zuzia", "Migus");
         dominika.pet=dog;
         dominika.telefon=motorola;
 
+        dominika.telefon = new Phone("Apple" );
+        sister.cash = 2000.0;
+
+        sister.car = new Car(1995);
+
+        sister.car.sale(sister, dominika, 1500.0);
+
+      //  System.out.println("dominika.telefon "+ dominika.telefon);
+      //  System.out.println("sister.telefon " + sister.telefon);
+
+        dominika.telefon.sale(dominika, sister, 500.0);
+
+      //  System.out.println("me.telefon " + sister.telefon);
+      //  System.out.println("sister.telefon " + sister.telefon);
 
 
 
@@ -61,6 +76,8 @@ public class Main {
         Car fiat = new Car(1995);
         Phone iphone = new Phone("Motorola");
         Device washingmachine = new Device(2021);
+
+
 
 
 
