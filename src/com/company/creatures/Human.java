@@ -76,9 +76,14 @@ public class Human extends Animal {
         return "Imię: " + firstName + " Nazwisko: " + lastName  +" Zwierzę: (" + pet + ") Samochód:( " + device + ") Pensja: " + salary + "Telefon: "+ telefon;
     }
 
+    @Override
+    public void feed(double foodWeight, String foodType) {
+
+    }
+
 
     @Override
-    public void feed(double foodWeight) {///wpisac ciało metody, logiczne zagadnienie rozbudowujące -potem
+    public void feed(double foodWeight) {
 
     }
 }

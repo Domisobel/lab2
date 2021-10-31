@@ -9,6 +9,7 @@ public class Phone extends Device implements Saleable  {
     Double screenSize;
     public String os;
 
+
     public Phone(String producer) {
         super();
     }
@@ -37,4 +38,17 @@ public class Phone extends Device implements Saleable  {
             System.out.println("Telefon "+ this.producer + " został sprzedany za " + price);
         }
     }
+
+    public void InstallApp(String nameApp){
+
+    }
+    public void InstallApp(String nameApp, Double versionApp ){
+
+    }
+    public void InstallApp(String nameApp, Double versionApp, String serverAdress){
+
+    }
+
+  //  public void
+
 }

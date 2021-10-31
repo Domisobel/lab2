@@ -77,4 +77,6 @@ public abstract class Animal implements Saleable, Feedable {
     {
         return "Imię: " + name + " Waga: " + weight  +" Lata: " + age + " Czy zyje : "+ alive;
     }
+
+    public abstract void feed(double foodWeight, String foodType);
 }
