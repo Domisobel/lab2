@@ -44,9 +44,12 @@ public class Main {
       //  System.out.println("sister.telefon " + sister.telefon);
 
         dominika.telefon.sale(dominika, sister, 500.0);
+        //dodac sprzedaz zwierzat
 
       //  System.out.println("me.telefon " + sister.telefon);
       //  System.out.println("sister.telefon " + sister.telefon);
+        dominika.pet = sister;
+        Human brother = new Human("Kasia", "Kowalska");
 
 
 

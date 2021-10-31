@@ -26,7 +26,9 @@ public class Human extends Animal{
         this.salary = DEFAULT_SALARY;
         this.cash = 0.0;
     }
-
+    public void sale(Human seller, Human buyer, double price) {
+        System.out.println("NIE");
+    }
 
 
     public void setSalary(Double newSalary) {
